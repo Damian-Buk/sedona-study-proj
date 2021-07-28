@@ -19,12 +19,12 @@
       </nav>
     </header>  
     <main class="container">
-      <h1>Туристический тур в Седону</h1>
+      <h1 class="visually-hidden">Туристический тур в Седону</h1>
       <div>
         <img src="img/welcome.png" width="459" height="353" alt="welcome to Sedona">
       </div>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <div>
           <p class="">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -77,10 +77,44 @@
         <div>
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button type="button">Поиск Гостиницы в Cедоне</button>
+          <button class="button-search-hotel" type="button">Поиск Гостиницы в Cедоне</button>
         </div>
-        <!-- Здесь будет форма -->
-        <!-- Здесь будет карта -->
+        <section>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="visually-hidden">Форма выбора даты заезда-выезда в отель</h2>
+            <div>
+              <label for="date-check-on">Дата заезда:</label>
+              <input type="text" name="date-check-on" id="date-check-on" value="24 апреля 2017">
+              <button type="button">
+                <img src="img/calendar.svg" alt="Календарь выбора даты">
+              </button>
+            </div>
+            <div>
+              <label for="date-check-out">Дата выезда:</label>
+              <input type="text" name="date-check-out" id="date-check-out" value="4 июля 2017">
+              <button type="button">
+                <img src="img/calendar.svg" alt="Календарь выбора даты">
+              </button>
+            </div>
+            <div>
+              <label for="adult-number">Взрослые:</label>
+              <button type="button">-</button>
+              <input type="text" name="adult-number" id="adult-number" value="2">
+              <button type="button">+</button>
+            </div>
+            <div>
+              <label for="children-number">Дети:</label>
+              <button type="button">-</button>
+              <input type="text" name="children-number" id="children-number" value="0">
+              <button type="button">+</button>
+            </div>
+            <button class="button-search-submit" type="submit">Найти</button>
+          </form>
+        </section>
+        <div class="map">
+          <h2 class="visually-hidden">Карта</h2>
+          <img src="img/map.jpg" width="1200" height="593" alt="Cедоне на карте"> 
+        </div>
       </section>
     </main>
     <footer class="footer container">
