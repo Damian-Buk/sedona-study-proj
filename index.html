@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Туристический тур в Седону</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header> 
@@ -19,8 +24,8 @@
       </nav>
     </header>  
     <main class="container">
-      <h1 class="visually-hidden">Туристический тур в Седону</h1>
       <div>
+        <h1 class="visually-hidden">Туристический тур в Седону</h1>
         <img src="img/welcome.png" width="459" height="353" alt="welcome to Sedona">
       </div>
       <section>
@@ -29,84 +34,112 @@
           <p class="">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <ul>
-          <li>
-            <div>
-              <h3>Настоящий городок</h3>
-              <p>№1</p>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <img src="img/feature-picture.jpg" width="800" height="256" alt="Фото Седона">
-            <ul>
-              <li>
-                <h3>Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li>
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li>
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img src="img/layer-5.jpg" width="800" height="256" alt="Фото Каньёна в Седоне">
-            <h3>Там есть Мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-        <div>
+        <section>
+          <ul>
+            <li>
+              <div>
+                <h3>Настоящий городок</h3>
+                <p>№1</p>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img src="img/feature-picture.jpg" width="800" height="256" alt="Фото Седона">
+              <ul>
+                <li>
+                  <div>
+                    <h3>Жильё</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  </div>  
+                </li>
+                <li>
+                  <div>
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>  
+                </li>
+                <li>
+                  <div>
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                  </div>  
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="img/layer-5.jpg" width="800" height="256" alt="Фото Каньёна в Седоне">
+              <div>
+                <h3>Там есть Мост дьявола</h3>
+                <p>№2</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>  
+            </li>
+            <li>
+              <div>
+                <h3>Небольшая площадь</h3>
+                <p>№3</p>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>  
+            </li>
+            <li>
+              <div>
+                <h3>Красивая дорога</h3>
+                <p>№4</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>  
+            </li>
+            <li>
+              <div>
+                <h3>Мало туристов</h3>
+                <p>№5</p>
+                <p>Большинство едет в гранд каньон и толпится там</p>
+              </div>  
+            </li>
+          </ul>
+        </section>
+        <section>
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button-search-hotel" type="button">Поиск Гостиницы в Cедоне</button>
-        </div>
+        </section>
         <section>
+          <h2 class="visually-hidden">Форма выбора даты заезда-выезда в отель</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <h2 class="visually-hidden">Форма выбора даты заезда-выезда в отель</h2>
             <div>
-              <label for="date-check-on">Дата заезда:</label>
-              <input type="text" name="date-check-on" id="date-check-on" value="24 апреля 2017">
-              <button type="button">
-                <img src="img/calendar.svg" alt="Календарь выбора даты">
-              </button>
-            </div>
-            <div>
-              <label for="date-check-out">Дата выезда:</label>
-              <input type="text" name="date-check-out" id="date-check-out" value="4 июля 2017">
-              <button type="button">
-                <img src="img/calendar.svg" alt="Календарь выбора даты">
-              </button>
-            </div>
-            <div>
-              <label for="adult-number">Взрослые:</label>
-              <button type="button">-</button>
-              <input type="text" name="adult-number" id="adult-number" value="2">
-              <button type="button">+</button>
-            </div>
-            <div>
-              <label for="children-number">Дети:</label>
-              <button type="button">-</button>
-              <input type="text" name="children-number" id="children-number" value="0">
-              <button type="button">+</button>
+              <div>
+                <label for="date-check-on">Дата заезда:</label>
+                <div>
+                  <input type="text" name="date-check-on" id="date-check-on" value="24 апреля 2017">
+                  <button type="button">
+                    <img src="img/calendar.svg" alt="Календарь выбора даты">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label for="date-check-out">Дата выезда:</label>
+                  <input type="text" name="date-check-out" id="date-check-out" value="4 июля 2017">
+                  <button type="button">
+                    <img src="img/calendar.svg" alt="Календарь выбора даты">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label for="adult-number">Взрослые:</label>
+                  <div>
+                    <button type="button">-</button>
+                    <input type="text" name="adult-number" id="adult-number" value="2">
+                    <button type="button">+</button>
+                  </div>  
+                </div>
+                <div>
+                  <label for="children-number">Дети:</label>
+                  <div>
+                    <button type="button">-</button>
+                    <input type="text" name="children-number" id="children-number" value="0">
+                    <button type="button">+</button>
+                  </div>  
+                </div>
+              </div>
             </div>
             <button class="button-search-submit" type="submit">Найти</button>
           </form>
@@ -118,21 +151,27 @@
       </section>
     </main>
     <footer class="footer container">
-      <p>#visitSEDONA</p>
-      <p>Тел: +7(495) 666-02-66</p>
       <div>
-        <ul>
-          <li><a href="#">Твитер</a></li>
-          <li><a href="#">Фэйсбук</a></li>
-          <li><a href="#">Youtube</a></li>
-        </ul>
-        <p>
-          Website by
-          <a href="https://htmlacademy.ru">
-            <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип htmlacademy">
-          </a>
-        </p>
-      </div>
+        <div>
+          <p>#visitSEDONA</p>
+          <p>Тел: +7(495) 666-02-66</p>
+        </div>  
+        <div>
+          <ul>
+            <li><a href="#">Твитер</a></li>
+            <li><a href="#">Фэйсбук</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div>  
+          <p>
+            Website by
+            <a href="https://htmlacademy.ru">
+              <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип htmlacademy">
+            </a>
+          </p>
+        </div>
+      </div>  
     </footer>
   </body>
 </html>
